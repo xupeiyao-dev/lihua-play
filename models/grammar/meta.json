@@ -1,0 +1,21 @@
+{
+ "kind": "grammar",
+ "bad_above": 0.9785,
+ "max_len": 64,
+ "file": "model.onnx",
+ "data": [
+  "model.data0",
+  "model.data1",
+  "model.data2",
+  "model.data3"
+ ],
+ "trained": "2026-10-28 02:06",
+ "results": {
+  "新留出句（第二、三批，模型没见过，量化后）": {
+   "冤枉": "1/50",
+   "抓到": "22/40"
+  },
+  "note": "2026-10-28 第三版：加了按词性自动改坏的约 4000 句（去 be、去 to、去 do、动词形式、副词挪句尾、对调）；阈值 logit 3.82"
+ },
+ "b64": true
+}

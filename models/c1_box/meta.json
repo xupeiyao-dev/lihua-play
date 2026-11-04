@@ -1,0 +1,38 @@
+{
+ "moment": "c1_box",
+ "off_below": 0.5,
+ "max_len": 96,
+ "intents": [
+  {
+   "id": "ask_how",
+   "a": "Ask how Jim got the letters, who gave them to him, or how he reached me. Jim: Thanks for all your letters. Sorry I never wrote back. The one about Spring Festival, with your grandma's dumplings. I genuinely read that one twice."
+  },
+  {
+   "id": "pretend",
+   "a": "Pretend to remember Jim: greet him warmly and say it is nice to hear from him. Jim: Thanks for all your letters. Sorry I never wrote back. The one about Spring Festival, with your grandma's dumplings. I genuinely read that one twice."
+  },
+  {
+   "id": "cold",
+   "a": "Reply coldly: say I do not know him, ask who he is or what he wants, sound distant or suspicious. Jim: Thanks for all your letters. Sorry I never wrote back. The one about Spring Festival, with your grandma's dumplings. I genuinely read that one twice."
+  }
+ ],
+ "file": "model.onnx",
+ "data": [
+  "model.data0",
+  "model.data1",
+  "model.data2",
+  "model.data3"
+ ],
+ "trained": "2026-10-28 00:57",
+ "golden": {
+  "name": "微调模型·测试句",
+  "false_off": 0.027777777777777776,
+  "caught": 0.9710144927536232,
+  "pos": 36,
+  "neg": 69,
+  "wrong": 1,
+  "caught_n": 67
+ },
+ "note": "2026-10-27 第二版：多了 252 句擦边句；量化后概率会往下掉，阈值在留出句上改挑 0.5（自动挑的 0.83 太贴近上限）",
+ "b64": true
+}
